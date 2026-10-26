@@ -5,57 +5,59 @@
 <br>
 
 <div align="center">
-  <img src="assets/main.png" alt="FKLauncher Main Interface" width="100%">
+  <img src="assets/main.png" alt="FKLauncher 3.0 home screen" width="100%">
   <br><br>
   <h1>🚀 FKLauncher</h1>
-  <p><b>Unified, Customizable and Lightweight Game Launcher</b></p>
-  <p><i>Organize and launch all your games from a single, beautifully designed application.</i></p>
+  <p><b>Eight game stores. One library.</b></p>
+  <p><i>Finds the games you have installed on Steam, Epic, Xbox, EA, Ubisoft, GOG, Rockstar and Riot, and opens them from one place, with their cover, hours and achievements.</i></p>
+  <p><a href="https://fk-launcher.vercel.app">fk-launcher.vercel.app</a></p>
 </div>
 
 ---
 
 ## 📖 Overview
 
-**FKLauncher** is a custom desktop application designed to solve the problem of having multiple game clients (Steam, Epic Games, Riot, EA, Xbox, etc.) scattered across your system. It acts as a central hub, automatically detecting games from various platforms and allowing you to add your own custom executables seamlessly. 
+**FKLauncher** is a free Windows desktop app that brings together all your game clients (Steam, Epic Games, Xbox / Game Pass, EA, Ubisoft, GOG, Rockstar and Riot). It detects your installed games automatically, launches each one through its own store, and lets you add any other `.exe` yourself.
 
-Built with a focus on **speed, aesthetics, and user experience**, it features a sleek dark mode design, cover art fetching, and deep customization options.
+> 💡 **Want to try it out?**
+> **[Download the latest version (FKLauncher v3.0.0)](https://github.com/FaKiNmc/Fk-launcher/releases/latest)** for Windows 10 and 11 (64-bit). FKLauncher is in Spanish for now.
+> If you already have 2.0.3, it updates itself.
 
-> 💡 **Want to try it out?**  
-> **[Download the latest version (FKLauncher-v2.0.3)](./FKLauncher.exe)** and organize your library instantly!
-
-### Latest Version: v2.0.3 (Auto-Update Reliability)
-*   **Seamless Installation:** Launcher now automatically restarts upon update installation, even when closing with a pending download.
-*   **Taskbar Integrity:** Fixed the issue where updates would break pinned icons. The installer now preserves shortcuts and AppUserModelId.
-*   **Distraction-Free Patches:** Silent patch updates no longer show modals; they install quietly when the app is closed.
-*   **Intuitive Visuals:** The update button now changes color (Green → Yellow) when ready, allowing one-click instant installation.
-*   **Full v2.0 Feature Set:** Includes Zustand state management, Worker-thread scanning, and IGDB/RAWG metadata integration.
-*   **Military Grade Security:** 100% obfuscated source code and tamper-resistant binaries.
+### Latest Version: v3.0.0 (Complete overhaul)
+*   **New interface:** Home with "Continue playing", library in grid or list view, tags, a Launchers tab, and a full-screen page for each game.
+*   **Backgrounds:** Your own image or video, a translucent window, or your Wallpaper Engine wallpapers, with rotation.
+*   **Steam account (optional):** Sign in on Steam's official page to see the games you own even if they are not installed, with all their achievements.
+*   **Now playing:** Detects the open game in any store and counts its playtime, also for games outside Steam.
+*   **Discord in depth:** Cover, store icon, hours and achievements in your Rich Presence, with a live preview of how others see you.
+*   **Report a bug:** Send a bug or a suggestion from Settings, with an optional diagnostic report you can review first, and follow its status.
+*   **Safer:** Games are launched by their id (the interface never sends paths or commands), the window runs sandboxed with a strict content security policy, and no secret keys ship inside the .exe.
 
 ---
 
 ## ✨ Features
 
-- 🎮 **Unified Game Library:** View all your installed games across launchers in one unified grid. 
-- 🔗 **Platform Detection:** Native support and badging for `Steam`, `Epic Games`, `Xbox / Game Pass`, `Rockstar`, `Riot Games`, `EA App`, and `Ubisoft`.
-- ➕ **Add Custom Games:** Easily add any standalone `.exe` or custom game to your library via the internal file and cover manager.
-- 🎨 **Deep Customization:** Modify the primary accent color, background hex, sidebar color, text colors, and more through a built-in settings panel.
-- 🖼️ **Dynamic Covers:** Full visual support for dynamic covers and custom URLs.
-- ⚡ **Lightweight & Fast:** Designed to minimize resource usage. Configurable option to auto-minimize when a game is launched to free up resources.
-- 🔍 **Real-Time Search:** Instantly find your games across your huge library with keyboard shortcuts (`Ctrl+F`).
-- 🏃 **Quick Launcher Access:** Direct links in the sidebar to open the original clients natively.
+- 🎮 **Unified Game Library:** All your installed games in one place, in grid or list view, with filters by store and status.
+- 🔗 **Platform Detection:** Rewritten scanners for `Steam`, `Epic Games`, `Xbox / Game Pass`, `EA App`, `Ubisoft`, `GOG`, `Rockstar` and `Riot Games`. A game bought on Steam but run through EA or Ubisoft shows up only once.
+- ➕ **Add Custom Games:** Add any standalone `.exe`, with a clean suggested name and your own cover.
+- 🖼️ **Covers:** Taken from your own Steam install first, then from the Steam and Epic stores and IGDB.
+- ⏱️ **Hours and Achievements:** Playtime, last session and achievements, with "Most played" and "Recently played" sorting. Hours can be edited by hand.
+- 🎨 **Customization:** Accent and background colors, font and cover size, and animated backgrounds.
+- 🔍 **Quick Search:** Find any game instantly with `Ctrl+K`.
+- 🔒 **Privacy:** No mandatory account and no ads. A single anonymous install number is sent to count users, and you can turn it off.
 
 ---
 
 ## 📸 Screenshots
 
 ### Settings & Customization
-Take control over the look and feel. Tweak the interface elements via precise Hex codes and configure launcher behavior like auto-minimize.
-<img src="assets/settings.png" alt="FKLauncher Settings" width="80%">
+Settings are organized by section: general, appearance, backgrounds, platforms, Steam account, Discord, updates, shortcuts and bug reports.
+<img src="assets/settings.png" alt="FKLauncher settings, Appearance section" width="80%">
 
 ### Adding Custom Games
-A simple and intuitive UI for adding standalone executables, complete with automatic path browsing and optional cover URL fetching.
-<img src="assets/add_game.png" alt="Add Custom Game" width="80%">
+Add any executable with its name and an optional cover, from a file or a URL.
+<img src="assets/add_game.png" alt="Add game dialog" width="80%">
 
+*Screenshots of the real 3.0. The games and their covers are made up.*
 
 ---
 ---
@@ -69,56 +71,59 @@ A simple and intuitive UI for adding standalone executables, complete with autom
 <br>
 
 <div align="center">
-  <img src="assets/main.png" alt="FKLauncher Interfaz Principal" width="100%">
+  <img src="assets/main.png" alt="Inicio de FKLauncher 3.0" width="100%">
   <br><br>
   <h1>🚀 FKLauncher (Español)</h1>
-  <p><b>Lanzador de Juegos Unificado, Personalizable y Ligero</b></p>
-  <p><i>Organiza y lanza todos tus juegos desde una única aplicación con un hermoso diseño.</i></p>
+  <p><b>Ocho tiendas de juegos. Una biblioteca.</b></p>
+  <p><i>Encuentra solo los juegos que tienes instalados en Steam, Epic, Xbox, EA, Ubisoft, GOG, Rockstar y Riot, y los abre desde un mismo sitio, con su portada, sus horas y sus logros.</i></p>
+  <p><a href="https://fk-launcher.vercel.app">fk-launcher.vercel.app</a></p>
 </div>
 
 ---
 
 ## 📖 Descripción General
 
-**FKLauncher** es una aplicación de escritorio personalizada diseñada para resolver el problema de tener múltiples clientes de juegos (Steam, Epic Games, Riot, EA, Xbox, etc.) dispersos por tu sistema. Actúa como un centro unificado, detectando automáticamente los juegos de varias plataformas y permitiéndote añadir tus propios ejecutables personalizados de forma fluida.
+**FKLauncher** es una aplicación gratuita de escritorio para Windows que reúne todas tus tiendas de juegos (Steam, Epic Games, Xbox / Game Pass, EA, Ubisoft, GOG, Rockstar y Riot). Detecta tus juegos instalados, abre cada uno con su propia tienda y te deja añadir cualquier otro `.exe` a mano.
 
-Construido con un enfoque en la **velocidad, la estética y la experiencia del usuario**, cuenta con un elegante diseño en modo oscuro, obtención de portadas y profundas opciones de personalización.
+> 💡 **¿Quieres probarlo?**
+> **[Descarga la última versión (FKLauncher v3.0.0)](https://github.com/FaKiNmc/Fk-launcher/releases/latest)** para Windows 10 y 11 (64 bits).
+> Si ya tienes la 2.0.3, te llega sola.
 
-> 💡 **¿Quieres probarlo?**  
-> **[Descarga la última versión (FKLauncher-v2.0.3)](./FKLauncher.exe)** ¡y organiza tu biblioteca al instante!
-
-### Versión Actual: v2.0.3 (Fiabilidad en Actualizaciones)
-*   **Instalación Fluida:** El launcher se cierra y se relanza automáticamente al instalar una actualización, tanto al pulsar el botón como al cerrar la ventana con una descarga pendiente.
-*   **Integridad de la Barra de Tareas:** Las actualizaciones ya no rompen el pin de la barra de tareas de Windows. El instalador ahora preserva los accesos directos con el identificador de aplicación correcto.
-*   **Parches sin Interrupciones:** Los parches silenciosos ya no abren ningún modal al descargarse. Se instalan al cerrar el launcher sin interrumpir al usuario.
-*   **Indicadores Visuales Intuitivos:** El botón de la barra superior cambia de color (Verde → Amarillo) cuando una actualización ya está descargada y lista, permitiendo instalar directamente en un clic.
-*   **Base v2.0 Completa:** Incluye migración a Zustand, escaneo por hilos de trabajo e integración con IGDB/RAWG.
-*   **Seguridad Grado Militar:** Código fuente 100% ofuscado y binario protegido contra ingeniería inversa.
+### Versión Actual: v3.0.0 (Renovación completa)
+*   **Interfaz nueva:** Inicio con «Seguir jugando», biblioteca en cuadrícula o lista, etiquetas, pestaña Launchers y ficha de cada juego a pantalla completa.
+*   **Fondos:** Imagen o vídeo propio, ventana translúcida o tus fondos de Wallpaper Engine, con rotación.
+*   **Cuenta de Steam (opcional):** Inicia sesión en la página oficial de Steam y verás los juegos que tienes aunque no estén instalados, con todos sus logros.
+*   **Jugando ahora:** Detecta el juego abierto en cualquier tienda y cuenta su tiempo, también en los que no son de Steam.
+*   **Discord a fondo:** Portada, icono de la tienda, horas y logros en tu Rich Presence, con una vista previa en vivo de cómo te ven los demás.
+*   **Reportar un fallo:** Envía un fallo o una sugerencia desde Ajustes, con un informe de diagnóstico opcional que ves antes de mandarlo, y sigue su estado.
+*   **Más seguro:** Los juegos se abren por su identificador (la interfaz nunca envía rutas ni comandos), la ventana funciona aislada con una política de seguridad de contenido estricta y el .exe no lleva claves secretas dentro.
 
 ---
 
 ## ✨ Características Principales
 
-- 🎮 **Biblioteca de Juegos Unificada:** Visualiza todos tus juegos instalados en diferentes lanzadores en una única cuadrícula unificada.
-- 🔗 **Detección de Plataformas:** Soporte nativo e insignias para `Steam`, `Epic Games`, `Xbox / Game Pass`, `Rockstar`, `Riot Games`, `EA App` y `Ubisoft`.
-- ➕ **Añadir Juegos Personalizados:** Añade fácilmente cualquier `.exe` independiente o juego personalizado a tu biblioteca mediante el gestor interno de rutas y carátulas.
-- 🎨 **Personalización Profunda:** Modifica el color de acento principal, el fondo hexadecimal, el color de la barra lateral, los colores del texto y más a través de un panel de configuración integrado.
-- 🖼️ **Portadas Dinámicas:** Soporte visual completo para carátulas dinámicas y URLs personalizadas.
-- ⚡ **Ligero y Rápido:** Diseñado para minimizar el uso de recursos. Opción configurable para minimizarse automáticamente al lanzar un juego, liberando recursos.
-- 🔍 **Búsqueda en Tiempo Real:** Encuentra instantáneamente tus juegos en toda tu biblioteca con atajos de teclado (`Ctrl+F`).
-- 🏃 **Acceso Rápido a Lanzadores:** Enlaces directos en la barra lateral para abrir los clientes originales de forma nativa.
+- 🎮 **Biblioteca Unificada:** Todos tus juegos instalados en un mismo sitio, en cuadrícula o lista, con filtros por tienda y estado.
+- 🔗 **Detección de Plataformas:** Escáneres reescritos para `Steam`, `Epic Games`, `Xbox / Game Pass`, `EA App`, `Ubisoft`, `GOG`, `Rockstar` y `Riot Games`. Un juego comprado en Steam que se abre con EA o Ubisoft sale una sola vez.
+- ➕ **Añadir Juegos Personalizados:** Añade cualquier `.exe` con un nombre propuesto limpio y tu propia portada.
+- 🖼️ **Portadas:** Primero del propio Steam de tu PC, y si falta alguna, de las tiendas de Steam y Epic y de IGDB.
+- ⏱️ **Horas y Logros:** Tiempo jugado, última partida y logros, con los órdenes «Más jugado» y «Jugado recientemente». Las horas se pueden editar a mano.
+- 🎨 **Personalización:** Colores de acento y fondo, tamaño de letra y de portadas, y fondos animados.
+- 🔍 **Búsqueda Rápida:** Encuentra cualquier juego al instante con `Ctrl+K`.
+- 🔒 **Privacidad:** Sin cuenta obligatoria y sin anuncios. Solo se envía un número anónimo de instalación para contar usuarios, y lo puedes apagar.
 
 ---
 
 ## 📸 Capturas de Pantalla
 
 ### Configuración y Personalización
-Toma el control del aspecto visual. Ajusta los elementos de la interfaz mediante códigos Hexadecimales precisos y configura el comportamiento del lanzador como el auto-minimizado.
-<img src="assets/settings.png" alt="Ajustes y Configuración" width="80%">
+Los ajustes van por secciones: general, apariencia, fondo, plataformas, cuenta de Steam, Discord, actualizaciones, atajos y reportar un fallo.
+<img src="assets/settings.png" alt="Ajustes de FKLauncher, sección Apariencia" width="80%">
 
 ### Añadir Juegos Personalizados
-Una interfaz de usuario sencilla e intuitiva para añadir ejecutables de forma independiente, que incluye búsqueda automática de rutas y descarga opcional de la URL de la portada.
-<img src="assets/add_game.png" alt="Añadir Juego Personalizado" width="80%">
+Añade cualquier ejecutable con su nombre y una portada opcional, desde un archivo o una URL.
+<img src="assets/add_game.png" alt="Ventana para añadir un juego" width="80%">
+
+*Capturas de la 3.0 de verdad. Los juegos y sus portadas son inventados.*
 
 ---
 
